@@ -5,7 +5,6 @@ const App = () => {
     class: "C4K-SB30",
     image: "https://cdn-icons-png.flaticon.com/512/186/186037.png",
     coins: 500,
-    pass: true,
     rank: index + 1,
   }));
 
@@ -46,8 +45,6 @@ const App = () => {
 
           <div>Class Name</div>
 
-          <div>Pass</div>
-
           <div>Coins</div>
         </div>
         <div className="list">
@@ -59,7 +56,6 @@ const App = () => {
                 <span> {leader.name} </span>
               </div>
               <span> {leader.class} </span>
-              <span> {leader.pass ? "Yes" : "No"} </span>
               <span> {leader.coins} </span>
             </div>
           ))}
